@@ -1,0 +1,152 @@
+# Configuración Principal de SpazioAbilities
+prefix: "&7[&bSpazioAbilities&7] "
+
+global-cooldown-seconds: 3
+
+worldguard:
+  enabled: true
+  require-pvp-flag: true
+  deny-message: "&c&l[!] &cNo puedes usar esta habilidad porque uno de los jugadores está fuera de la zona PvP."
+
+messages:
+  no-permission: "&cNo tienes permisos para ejecutar este comando."
+  only-players: "&cEste comando solo puede ser ejecutado por jugadores."
+  cooldown-active: "&c&l[!] &cDebes esperar &e{time}s &cpara usar &e{ability}&c."
+  global-cooldown: "&c&l[!] &cDebes esperar &e{time}s &cantes de usar otra habilidad."
+  target-not-found: "&cJugador no encontrado o fuera de rango."
+  no-recent-attacker: "&cNo te ha atacado ningún jugador recientemente para usar Ninja Shear."
+  ability-inhibited: "&c&l[!] &cUn enemigo ha bloqueado tus habilidades por &e{time}s&c."
+
+abilities:
+  NINJA_SHEAR:
+    name: "&b&lNinja Shear"
+    material: "SHEARS"
+    glow: true
+    lore:
+      - "&7Habilidad HCF"
+      - "&eHaz Click Derecho &7para teletransportarte"
+      - "&7detrás del último jugador que te atacó."
+      - ""
+      - "&bCooldown: &f30s"
+    cooldown: 30
+    combat-time-window: 15
+
+  SWITCHER:
+    name: "&d&lSwitcher Egg"
+    material: "EGG"
+    glow: true
+    lore:
+      - "&7Habilidad HCF"
+      - "&eLanza o usa este objeto &7para intercambiar"
+      - "&7posiciones con tu enemigo a corta distancia."
+      - ""
+      - "&bCooldown: &f25s"
+    cooldown: 25
+    max-distance: 12.0
+
+  RESISTANCE:
+    name: "&a&lPortable Resistance"
+    material: "IRON_INGOT"
+    glow: true
+    lore:
+      - "&7Habilidad HCF"
+      - "&eHaz Click Derecho &7para obtener"
+      - "&aResistencia III &7y Absorción II."
+      - ""
+      - "&bCooldown: &f45s"
+    cooldown: 45
+    duration-seconds: 6
+    amplifier: 2
+
+  STRENGTH:
+    name: "&c&lPortable Strength"
+    material: "BLAZE_POWDER"
+    glow: true
+    lore:
+      - "&7Habilidad HCF"
+      - "&eHaz Click Derecho &7para obtener"
+      - "&cFuerza II &7durante 5 segundos."
+      - ""
+      - "&bCooldown: &f60s"
+    cooldown: 60
+    duration-seconds: 5
+    amplifier: 1
+
+  SPEED:
+    name: "&e&lPortable Speed"
+    material: "SUGAR"
+    glow: true
+    lore:
+      - "&7Habilidad HCF"
+      - "&eHaz Click Derecho &7para obtener"
+      - "&eVelocidad III &7durante 8 segundos."
+      - ""
+      - "&bCooldown: &f40s"
+    cooldown: 40
+    duration-seconds: 8
+    amplifier: 2
+
+  ROCKET:
+    name: "&6&lRocket Boost"
+    material: "FIREWORK_ROCKET"
+    glow: true
+    lore:
+      - "&7Habilidad HCF"
+      - "&eHaz Click Derecho &7para salir impulsado"
+      - "&7hacia arriba con inmunidad a caída."
+      - ""
+      - "&bCooldown: &f35s"
+    cooldown: 35
+    boost-power: 1.8
+
+  WEB_TRAP:
+    name: "&f&lCobweb Trap"
+    material: "COBWEB"
+    glow: true
+    lore:
+      - "&7Habilidad HCF"
+      - "&eGolpea a un enemigo &7para atraparlo"
+      - "&7en una jaula de telarañas por 5s."
+      - ""
+      - "&bCooldown: &f50s"
+    cooldown: 50
+    trap-duration-seconds: 5
+
+  ABILITY_INHIBIT:
+    name: "&5&lAbility Inhibitor"
+    material: "REDSTONE_TORCH"
+    glow: true
+    lore:
+      - "&7Habilidad HCF"
+      - "&eGolpea a un enemigo &7para bloquear"
+      - "&7todas sus habilidades por 10s."
+      - ""
+      - "&bCooldown: &f60s"
+    cooldown: 60
+    inhibit-duration-seconds: 10
+
+  THORNS_SHIELD:
+    name: "&9&lThorns Shield"
+    material: "SHIELD"
+    glow: true
+    lore:
+      - "&7Habilidad HCF"
+      - "&eHaz Click Derecho &7para reflejar 50%"
+      - "&7del daño recibido a tus atacantes."
+      - ""
+      - "&bCooldown: &f40s"
+    cooldown: 40
+    duration-seconds: 6
+    reflect-ratio: 0.50
+
+  ANTI_REDSTONE:
+    name: "&4&lAnti-Redstone Disruptor"
+    material: "REDSTONE"
+    glow: true
+    lore:
+      - "&7Habilidad HCF"
+      - "&eGolpea a un enemigo &7para quitarle sus"
+      - "&7efectos de pociones positivos."
+      - ""
+      - "&bCooldown: &f55s"
+    cooldown: 55

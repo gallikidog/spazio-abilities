@@ -1,0 +1,13 @@
+network\minespazio\spazioabilities\listeners\CombatTrackerListener.class
+network\minespazio\spazioabilities\listeners\AbilityListener.class
+network\minespazio\spazioabilities\ability\AbilityManager$1.class
+network\minespazio\spazioabilities\ability\AbilityManager.class
+network\minespazio\spazioabilities\gui\AbilityGUI.class
+network\minespazio\spazioabilities\config\ConfigManager.class
+network\minespazio\spazioabilities\cooldown\CooldownManager.class
+network\minespazio\spazioabilities\ability\AbilityItem.class
+network\minespazio\spazioabilities\ability\AbilityType.class
+network\minespazio\spazioabilities\SpazioAbilities.class
+network\minespazio\spazioabilities\commands\AbilityCommand.class
+network\minespazio\spazioabilities\listeners\CombatTrackerListener$AttackerInfo.class
+network\minespazio\spazioabilities\hooks\WorldGuardHook.class

@@ -1,0 +1,23 @@
+name: SpazioAbilities
+version: 1.0.0
+main: network.minespazio.spazioabilities.SpazioAbilities
+api-version: '1.21'
+description: HCF Combat Partner Abilities plugin for Paper 1.21.1+ with WorldGuard protection.
+author: MineSpazio
+softdepend: [WorldGuard, PlaceholderAPI]
+
+commands:
+  spazioabilities:
+    description: Comando principal de administración de habilidades.
+    aliases: [abilities, ability, partneritem, partneritems]
+    usage: /spazioabilities [give|list|gui|reload]
+    permission: me.spazioabilities.admin
+    permission-message: "&cNo tienes permiso para utilizar este comando."
+
+permissions:
+  me.spazioabilities.admin:
+    description: Permite administrar e invocar habilidades de combate.
+    default: op
+  me.spazioabilities.use:
+    description: Permite utilizar habilidades de combate.
+    default: true
